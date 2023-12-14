@@ -1,4 +1,4 @@
-describe("/user/register", () => {
+/* describe("/user/register", () => {
   const registerEndPoint = "http://localhost:3800/api/user/register";
   //Test for response status of the request api with body
   it("Create User with valid body", () => {
@@ -37,3 +37,36 @@ describe("/user/register", () => {
     });
   });
 });
+ */
+
+
+
+describe("Square Admin Testing", ()=>{
+  beforeEach(()=>{
+    const url = "https://squareadmin.tstvixr.in/";
+    cy.visit(url);
+  })
+
+
+  it("Clicking on SignUp !!", ()=>{
+    //auto click on signup option after opening ui
+    cy.get('.inline-block').click();
+    //Auto check whther form page displaying or not
+    cy.get('.max-w-md').should('be.visible');
+    cy.get('.inline-block')
+    
+  //Email Input
+  cy.get(':nth-child(4) > .w-full').type("demo@vixr.io");
+
+  // Password Input Testing
+  cy.get('.relative > .w-full').type("demoBoss@123");
+
+  //Signup button testing
+  cy.get('.bg-default-button').click();
+    
+  })
+  
+})
+
+
+

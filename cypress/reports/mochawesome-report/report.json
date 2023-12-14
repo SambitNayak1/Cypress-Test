@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2023-12-14T11:41:51.101Z",
+    "end": "2023-12-14T11:42:11.054Z",
+    "duration": 19953
+  },
+  "results": [
+    {
+      "uuid": "4e860e85-4f69-465b-8916-e290ee564de0",
+      "title": "",
+      "fullFile": "cypress/e2e/login.cy.js",
+      "file": "cypress/e2e/login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "840acd31-c361-48bc-a001-9c18d19a7d4c",
+          "title": "Login Page Testing of Admin UI",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testing Login By Credential",
+              "fullTitle": "Login Page Testing of Admin UI Testing Login By Credential",
+              "timedOut": null,
+              "duration": 11257,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Click on login icon\ncy.get('a[href=\"/login-with-email\"]').click();\n//Input Email \ncy.get(':nth-child(4) > .w-full').type('demo@vixr.io');\n//Input Password\ncy.get('.relative > .w-full').type(\"demoBoss@123\");\n//Click on Login Button\ncy.get('.bg-default-button').click();",
+              "err": {},
+              "uuid": "1cacccbf-f014-4d79-85c7-8b053d1ebdd7",
+              "parentUUID": "840acd31-c361-48bc-a001-9c18d19a7d4c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1cacccbf-f014-4d79-85c7-8b053d1ebdd7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11257,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "101f48d6-827d-4f40-8081-fa13f6c8513d",
+      "title": "",
+      "fullFile": "cypress/e2e/spec.cy.js",
+      "file": "cypress/e2e/spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8096f608-481b-4254-a8b3-793d02f2cbb2",
+          "title": "Square Admin Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Clicking on SignUp !!",
+              "fullTitle": "Square Admin Testing Clicking on SignUp !!",
+              "timedOut": null,
+              "duration": 4368,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//auto click on signup option after opening ui\ncy.get('.inline-block').click();\n//Auto check whther form page displaying or not\ncy.get('.max-w-md').should('be.visible');\ncy.get('.inline-block');\n//Email Input\ncy.get(':nth-child(4) > .w-full').type(\"demo@vixr.io\");\n// Password Input Testing\ncy.get('.relative > .w-full').type(\"demoBoss@123\");\n//Signup button testing\ncy.get('.bg-default-button').click();",
+              "err": {},
+              "uuid": "dac92e29-7057-4142-bf99-eb1645b05f2a",
+              "parentUUID": "8096f608-481b-4254-a8b3-793d02f2cbb2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dac92e29-7057-4142-bf99-eb1645b05f2a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4368,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
